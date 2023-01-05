@@ -4,120 +4,87 @@
     <meta charset="utf-8" />
     <title>Titre de la page</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="carousel.css" />
   </head>
   <body>
-    <!--Logo and burger menu above-->
-    <div class="hero-part">
-      <div class="hero-div1">
-        <img src="assets/Banniere.jpg" width="100%" />
-        <div class="centered">
-          <h1>Bienvenue</h1>
-          <p>Bienvenue dans le monde de la domotique</p>
+    <img
+      src="assets/Background.gif"
+      id="disappear"
+      onClick="makeInvisible();"
+      height="400"
+      width="100%"
+    />
+    <div id="visiblePls" class="hide">
+      <image
+        src="assets/Background.gif"
+        id="opacityChange"
+        height="400"
+        width="100%"
+      />
+      <h1 class="center">BlaBla Bienvenue chez moi</h1>
+
+      <h2>Titre Carousel</h2>
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="assets/Background.gif" style="width: 100%" />
+          <div class="text">Caption Text</div>
         </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="assets/Background.gif" style="width: 100%" />
+          <div class="text">Caption Two</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="assets/Background.gif" style="width: 100%" />
+          <div class="text">Caption Three</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
       </div>
-      <div class="hero-div2">
-        <h2>Exemple 1</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quis
-          architecto aperiam explicabo asperiores laborum in dolores iure
-          quaerat fugiat itaque ea odit, ullam cum, repudiandae voluptates
-          dolore voluptatem debitis.
+      <br />
+
+      <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+      <h2>Titre Video</h2>
+      <iframe
+        width="420"
+        height="315"
+        src="https://www.youtube.com/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY&loop=1"
+      >
+      </iframe>
+      <iframe
+        width="420"
+        height="315"
+        src="https://www.youtube.com/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY&loop=1"
+      >
+      </iframe>
+      <iframe
+        width="420"
+        height="315"
+        src="https://www.youtube.com/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY&loop=1"
+      >
+      </iframe>
+      <p>
+        Ceci est un paragraphe en dessous des titres expliquants le contenu des
+        vidéos divisé en 3 parties si j'ai le temps
+      </p>
+      <h2>Titre Spoiler</h2>
+      <div class="center-pls">
+        <button class="button button1" onClick="showSpoiler();">Spoil me</button>
+      </div>
+        <p id="spoilerWarning" class="hide">
+          Ceci est un Texte qui est invisible de base mais qui apparait quand on
+          appuie sur le bouton spoiler
         </p>
-      </div>
-      <div class="hero-div3">
-        <h2>Exemple 2</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-          eligendi laboriosam asperiores illum a vero amet non veritatis
-          deserunt at. Quia tempore provident repellendus aspernatur dolorum
-          cupiditate, libero vitae fugiat.
-        </p>
-      </div>
     </div>
-    <hr />
-    <div class="main-article">
-      <div class="main-div1">
-        <h1>Article Principaux</h1>
-        <p>Mini lorem</p>
-      </div>
-      <div class="main-div2">
-        <h2>Article 1</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi
-          tempore distinctio, ad at assumenda autem quibusdam doloribus. A
-          dolorem, asperiores voluptatum reiciendis impedit totam maxime.
-          Repellendus beatae laborum quod corporis.
-        </p>
-      </div>
-      <div class="main-div3">
-        <h2>Article 2</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
-          voluptas suscipit aliquid asperiores nesciunt dicta nostrum a
-          cupiditate deleniti mollitia iste aperiam itaque rerum officiis est,
-          fugiat ipsum. Blanditiis, fugiat?
-        </p>
-      </div>
-      <div class="main-div4">
-        <h2>Article 3</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
-          similique eaque itaque perferendis error! Debitis ipsam magni totam!
-          Laudantium, sed cum deleniti sint illum a voluptates qui magni alias
-          suscipit.
-        </p>
-      </div>
-    </div>
-    <hr />
-    <div class="mini-article">
-      <div class="mini-div1">
-        <h1>Mini Article</h1>
-        <p>mini Lorem</p>
-      </div>
-      <div class="mini-div2">
-        <img src="assets/Maison.png" width="100%" />
-      </div>
-      <div class="mini-div3">
-        <h2>Article1</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
-          voluptas
-        </p>
-      </div>
-      <div class="mini-div4">
-        <img src="assets/Maison.png" width="100%" />
-      </div>
-      <div class="mini-div5">
-        <h2>Article2</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae sunt,
-          culpa reprehenderit vitae tenetur ducimus eum quis nisi veritatis
-          quibusdam consequatur mollitia commodi impedit eligendi id iste
-          expedita veniam. Eveniet?
-        </p>
-      </div>
-      <div class="mini-div6">
-        <img src="assets/Maison.png" width="100%" />
-      </div>
-      <div class="mini-div7">
-        <h2>Article3</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
-          voluptas
-        </p>
-      </div>
-      <div class="mini-div8">
-        <img src="assets/Maison.png" width="100%" />
-      </div>
-      <div class="mini-div9">
-        <h2>Article4</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
-          voluptas
-        </p>
-      </div>
-    </div>
-    <hr />
+    <script src="script.js"></script>
   </body>
 </html>
