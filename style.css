@@ -8,7 +8,7 @@
   src: url(assets/ITC\ Benguiat\ Book.ttf);
 }
 body{
-  background-color: rgba(201,201,201,1);
+  background-color: rgba(136,100,66,1);
 }
 h1{
 text-align: center;
@@ -21,6 +21,7 @@ h2{
 }
 p {
   text-align: center;
+  font-size:large;
 }
 
 .button {
@@ -55,7 +56,9 @@ p {
 .visible{
   display: block;
 }
-
+.spacing{
+margin-top: 4%;
+}
 .center-pls{
   display: flex;
   justify-content: center;
@@ -76,4 +79,36 @@ p {
 .spoiler-background{
   background: rgb(17,17,17);
   background: linear-gradient(180deg, rgba(17,17,17,1) 0%, rgba(201,201,201,1) 20%);
+}
+.copyright{
+  margin-top: 5%;
+}
+.left{
+  text-align: left;
+}
+@media screen and (max-width: 1300px) {
+
+.video-flex{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+iframe{
+  margin-bottom: 5%;
+}
+.images-background{
+  background: rgb(17,17,17);
+  background: linear-gradient(180deg, rgba(17,17,17,1) 27%, rgba(136,100,66,1) 50%);
+
+}
+.video-background{
+  background: rgb(136,100,66);
+  background: linear-gradient(180deg, rgba(136,100,66,1) 0%, rgba(17,17,17,1) 2%);
+  color:white;
+}
+.spoiler-background{
+  background: rgb(17,17,17);
+  background: linear-gradient(180deg, rgba(17,17,17,1) 0%, rgba(201,201,201,1) 10%);
+}
 }
