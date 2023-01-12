@@ -1,5 +1,6 @@
 function makeInvisible() {
 	document.getElementById("disappear").className = "hidden";
+  document.getElementById("disappear2").className = "hidden";
 	document.getElementById("visiblePls").className = "visible";
 }
 

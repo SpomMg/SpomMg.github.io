@@ -14,33 +14,35 @@
       height="400"
       width="100%"
     />
+    <h2 id="disappear2">Clique sur l'image pour afficher le site</h2>
     <div id="visiblePls" class="hide">
+      <div class="images-background">
       <image
         src="assets/Background.gif"
         id="opacityChange"
         height="400"
         width="100%"
       />
-      <h1 class="center">BlaBla Bienvenue chez moi</h1>
 
-      <h2>Titre Carousel</h2>
+      <h1 class="center">Titre Principal</h1>
+      <h2>Les différents décors</h2>
       <div class="slideshow-container">
         <div class="mySlides fade">
           <div class="numbertext">1 / 3</div>
-          <img src="assets/Background.gif" style="width: 100%" />
-          <div class="text">Caption Text</div>
+          <img src="assets/image1.jpg" style="width: 100%" />
+          <div class="text">Les ruines d'une ville</div>
         </div>
 
         <div class="mySlides fade">
           <div class="numbertext">2 / 3</div>
-          <img src="assets/Background.gif" style="width: 100%" />
-          <div class="text">Caption Two</div>
+          <img src="assets/image2.jpg" style="width: 100%" />
+          <div class="text2">Un vaste desert</div>
         </div>
 
         <div class="mySlides fade">
           <div class="numbertext">3 / 3</div>
-          <img src="assets/Background.gif" style="width: 100%" />
-          <div class="text">Caption Three</div>
+          <img src="assets/image3.jpg" style="width: 100%" />
+          <div class="text">Un parc d'attraction</div>
         </div>
 
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -53,37 +55,47 @@
         <span class="dot" onclick="currentSlide(2)"></span>
         <span class="dot" onclick="currentSlide(3)"></span>
       </div>
+      </div>
+      <div class="video-background">
       <h2>Titre Video</h2>
-      <iframe
-        width="420"
-        height="315"
-        src="https://www.youtube.com/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY&loop=1"
-      >
-      </iframe>
-      <iframe
-        width="420"
-        height="315"
-        src="https://www.youtube.com/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY&loop=1"
-      >
-      </iframe>
-      <iframe
-        width="420"
-        height="315"
-        src="https://www.youtube.com/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY&loop=1"
-      >
-      </iframe>
-      <p>
-        Ceci est un paragraphe en dessous des titres expliquants le contenu des
-        vidéos divisé en 3 parties si j'ai le temps
-      </p>
+      <div class="video-flex">
+        <iframe
+          width="420"
+          height="315"
+          src="https://www.youtube.com/embed/j6661beJnZw?controls=1"
+        >
+        </iframe>
+        <iframe
+          width="420"
+          height="315"
+          src="https://www.youtube.com/embed/Qh8dqpANMKk?controls=1"
+        >
+        </iframe>
+        <iframe
+          width="420"
+          height="315"
+          src="https://www.youtube.com/embed/Gibu0sJQwkM?controls=1"
+        >
+        </iframe>
+      </div>
+        <p>
+          <br/>
+          Ceci est un paragraphe en dessous des titres expliquants le contenu
+          des vidéos divisé en 3 parties si j'ai le temps
+        </p><br>
+      </div>
+      <div class="spoiler-background">
       <h2>Titre Spoiler</h2>
       <div class="center-pls">
-        <button class="button button1" onClick="showSpoiler();">Spoil me</button>
+        <button class="button button1" onClick="showSpoiler();">
+          Spoil me
+        </button>
       </div>
-        <p id="spoilerWarning" class="hide">
-          Ceci est un Texte qui est invisible de base mais qui apparait quand on
-          appuie sur le bouton spoiler
-        </p>
+      <p id="spoilerWarning" class="hide">
+        Ceci est un Texte qui est invisible de base mais qui apparait quand on
+        appuie sur le bouton spoiler
+      </p>
+    </div>
     </div>
     <script src="script.js"></script>
   </body>
